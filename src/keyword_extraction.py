@@ -152,7 +152,7 @@ class KeywordExtractor:
     def get_related_files(self, component: InputComponent, top_k: int = 10, threshold: float = 0.6):
         target_embeddings = self.embed(component.description)
         scores = []
-        for keyword in tqdm(self.doc_keywords):
+        for keyword in self.doc_keywords:
             try:
                 score = cosine_similarity(
                     target_embeddings,
