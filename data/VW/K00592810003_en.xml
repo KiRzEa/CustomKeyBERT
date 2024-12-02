@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Fuses in luggage compartment, From November 2017</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Current flow diagrams</element>
+    <element level="1">Current flow diagrams</element>
+    <element level="2">Fuses in luggage compartment, From November 2017</element>
+  </path>
+  <TITLE>Fuses in luggage compartment, From November 2017</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>01.2024</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630151431</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>23</Sys_type_ID>
+			<Sys_type_Desc>ALL SYSTEMS</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>06</Doc_type_ID>
+		<Doc_type_Desc>WiringDiagram</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">91be6fa76b58028464a941e284496968d53d2c527d4e4f60a4f3fa535eef7009</HASH>
+    <HASH Type="DOC">5776973fa99532d938dc44981bbc45ad004fbdc41737c6ce7af3577dd48a2132</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003020124.svg">a613998cf4ba5607da0d34489171c039ed492ca53d17b3943ac4fba6c28968dd</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003030124.svg">0a4d5cef6f47bac06a9e932987048606e17e4093f223a79ea179d73e26b3af1a</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003040124.svg">0ea0f5e510b7fa3d10b3e1cc31a00e33143a33a6039bec02457003b18dc0b5ed</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003050124.svg">178fe5f1ab0d7cae2bd38095f6ac94b73e47aaeea56fcfae0eff5720eec3652e</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003060124.svg">118f9c9395c93799dfbaabf6376a569791c8ad3801486bf49f703ff4bb6428ef</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003070124.svg">5c74203c8162ee4954507d1a4d4743e9a4097be3841cddd8649efcf3180bc63b</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003080124.svg">cadbfd918ee67d8108f4dba24da734f5f8ab9a30b02d43b9a3c21ced13ec59e6</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003090124.svg">ce4f371572d104a97fea0db2d4f361cf3e03098f35765c31f94a9263bfd36bf4</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003100124.svg">b51b642730a965773ec37e2e65229f3eb99f583f0d8c16a261477da4b4520354</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-003110124.svg">640690e76f814d064692e84eff250bc963cfb0ba60c8dac13336bfd5e219c131</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

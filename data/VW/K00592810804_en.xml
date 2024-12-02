@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Fitting locations</SearchEngineTerm>
+    <SearchEngineTerm>- Fitting locations: front part of vehicle</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>CVMC</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>CVMD</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>CYRB</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>CYRC</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DCBE</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DENA</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DEND</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DFKA</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DMFA</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DMVB</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DNEA</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DPYC</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DPYD</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DUVA</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Current flow diagrams</element>
+    <element level="1">Fitting locations</element>
+    <element level="2">- Fitting locations: front part of vehicle</element>
+  </path>
+  <TITLE>- Fitting locations: front part of vehicle</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>01.2024</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630151431</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>23</Sys_type_ID>
+			<Sys_type_Desc>ALL SYSTEMS</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>04</Doc_type_ID>
+		<Doc_type_Desc>Installation_position_in_picture</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">337bc51d72d1be26106d7424e4ef541ea17f187132358e8696d11069ca6f00ab</HASH>
+    <HASH Type="DOC">f172a4a0818acb5e3673e19cb2e65cdf173b8054d2f8a66367e3249f9fc05e6a</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15494.png">460050d1aa395e2a49907a2a1ba85260e720984092dbcdf9311dd6d9b80c5e27</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-16436.png">5dd94b0d882d96d4e9104814ac9357d1e28bc927c45e647fc83d04cce51fc885</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14479.png">84ab87768f17504fa4ccc87660d93b4db3e0a1fb6f8a63795a158ed93ba47c3f</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14480.png">e84dc642296e09998b05bb8194677e63c39ad7eaf898f053561c025eeb22ce68</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15236.png">a3f8cc06b98c84b9e15293e253f1a31750c96d1381f99d2815581725708081c6</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14481.png">3a46e9906e978b99834970a5376f1d7ffb99cecb2aa57c8f40bae48541f09415</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15237.png">0dcb830f3cfa58b65854ad8bab0adfb1caf4300af6ff93ff4b88f2be7959ff85</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15177.png">fa6a469e70a1eac00127aefd27608ca44c09e7632a06be7bcfffbcc3708fcff7</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14693.svg">edf6e23393eadc4d2bd62ffed1bc85771dedaa63e4bd15f2ba7e2ac74ec67bcd</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15221.png">566ba7a877b7b5933709dbd3adec83c7f2b82b46ba5695d2bd8d5bbf142d7179</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14484.png">b534e6c3ca9e5363f24f1af3d7552d7c8e596bcaa738ec602189d0e43bea4fde</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15222.png">63e403c812f6582cf6977f4a9c5884308812b0818e0ac2b5d318a7235c48388b</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14694.svg">4e48bfa03cef31fecbea9581f15090e799e3fc09b9fe7306f61d10c526275cb0</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14486.png">e9285661f6cb7796a4379abc53148ac603e716e3a96bc6e21614a102a5bc7d79</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15053.png">d25a2d70ce5f33c72b9d043d586062f671de984d1e90afbd0bd8fce02bbe50b1</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15051.png">f79f33fe12c028ff9481d7edc6bc742ef2504585e2fe180c5a7af1349b316671</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15052.png">c9bfbf2057639a4933c7472c2d029cd135725ead8c09a9cf3a5872ab0026036d</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-14127.svg">b0545e9f094fa33460bafa2c5b877b1fd990c3e9a8cc1cc5d32e20cb21f7c752</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-15015.svg">20b00462157cef90a10617c491523771c1da91ae86b09fe33efaee8d6808d94c</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-15016.svg">2c645c371f8dccb74133a1a045d1da2371046328ddfb792784afffa84a94e424</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-16287.png">002926a31440a8b2e18d5a45b0e0c215b3814f1f33b534eb63c9f66f85689302</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13507.svg">7a1e251baa5c63d681b5215501e081cf4784b4b231c0ec51700ca7c8bc7bba25</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13508.svg">a70b6542df920104e8136904b0d9d9f719c27ba2c2d079687626c165f89d1bb8</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13509.svg">1c57cc6067d0c5b7eed3c19e5fa99d3739e73bd1d4b07a1ce0531deaf5ae9e7e</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13505.svg">484948c72ce8b3b4bf739be9c8cae2570892cadab27eac98a02218fd39b46010</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13504.svg">79537ca6034d5606c9b5ce87976bae5d43adc323dd6662baec9a513a2ad08d0a</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13510.svg">d5d9afe0f4467b8455fc1fa94bd62287ba0163092237516032851b77b2ebfd77</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13502.svg">2dcd7cbeb1c6fdb88a6ddbf01f6c354e3e402e4732c023bb7feef6a00e6a0341</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13590.svg">d94d105cf656c274436a5c0c4758f31112a51e6aad2ac6c852bceaa8d5c63819</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13379.svg">1601fba532ab3e7226e9eee337d90c0fdd2c0460d8d4f65e27789bc272e91af1</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13380.svg">a02be9cac894cb617f20f075843b05f86af2ad6328f54cc87ffa525c88505081</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13503.svg">0d25135456a1991da4a2ec7b6c034500bb5443d1882e9e751a0708af5e906b69</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14695.svg">463eb6af49fea7f603afe5c7a5150d213f746542665003af6d4a9718ff2e80c2</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13591.svg">32806e75424959b0dea2a5c0aa4a1a7f72efd6d8977edebfd0c1ee211ee81e58</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15741.png">51f518971973d23715b5e9e7cae020756cd5401e6729ebbbd83e1bf3c52e1785</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15737.png">79d88e25e8b0ac37d05136fd0d830f9eca2888c4599d023342cf78ed7b75772b</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15740.png">ae1c7d3d21629562941c01bd97991c17510aba79d8a42a2a0b25f70d95ce0228</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15738.png">9a34444105f7f4609b10c247096505881ee5b06e38593f97be5ba052ebf11cdf</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15739.png">c5384ef988b6dada4de0fe331cb8c39e6a9307e339b25983801ad2215b3c2641</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13596.svg">8e6f5bd09f9eb9d64e387ed9f757f46a7042db0842cda915cbfef98281d57ff8</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13592.svg">a3dc949183cc0bdea7d626aa1d92f377475c9d7450b48cb661cc3e7a4c8232dc</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13593.svg">a700f945baef035921a217f6694976c576273a31e7400cee019170b88685e21a</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13598.svg">fe5943209d0ea9fb30cd9fb7adcce0f5686bf9607a8fe308df11273b995f62bd</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13595.svg">d68753bcf772fabe71758cb4a9001472ea8694bbf3e90dc22e4b48d063a9b5e5</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A97-13594.svg">9abde0eb81a1e9310892dfeeaaf34fdfa11289a400447e1388ad24cc65aad2b6</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14497.png">0d7daeaf00ec8521973a36ddb94e7f02fd07ebb0e14d86718598a4cb216f9d42</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15054.png">6d4c3529dd53876f1cc40ab354f0ec65f036ea57ba77b59dc10ca031eefa4895</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14749.png">675dcbdf41f8478e565dd9c7f6b27c1a314c19390858dcc2c8b8912040ae4f7a</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14750.png">a56d750c4803c923a0bf6daf06c0c895ac32599a4d3a6ff06775ced841909e3e</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

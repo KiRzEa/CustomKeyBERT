@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Anti-lock brake system (ABS), From November 2017</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Current flow diagrams</element>
+    <element level="1">Current flow diagrams</element>
+    <element level="2">Anti-lock brake system (ABS), From November 2017</element>
+  </path>
+  <TITLE>Anti-lock brake system (ABS), From November 2017</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>09.2023</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630151431</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>01</Sys_type_ID>
+			<Sys_type_Desc>Brakes</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>06</Doc_type_ID>
+		<Doc_type_Desc>WiringDiagram</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">6b22a1e56a7e798cee007cc149de2530a1b3ed5e19482996740195ff0bd02b8f</HASH>
+    <HASH Type="DOC">61ed1a7fdd237a8d739a81347a15bd85963c1ffd81ba9373e173f75a2c45ef72</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-018020923.svg">4f05d73532b7365ea95506c3924064fb2b2f906632f7ec68fafd4fe901077144</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-018030923.svg">2adc818947d0bb4a8d05995954f545293a71aa84fc8c37ece8208648cfb9c8d4</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-018040923.svg">930e4b7acafd918378f4bab000a7b6b4b08dbdbc3ae5d8ce448c4e4a45c91390</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-018050923.svg">d72959f4a06049d8d14b22e9d81838a0fdd54ce389a2f4d7634d6cbb5a84ddef</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-018060923.svg">370596b91557b8e331131b44e1aac447e2cb56fc0bb72235163f47b56add33c8</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-018070923.svg">2aeadb28deff6e7911cb2fa03c7650e8f971111cfe9701383d406d805b7e19d9</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

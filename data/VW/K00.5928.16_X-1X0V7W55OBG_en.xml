@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Workshop Manual</SearchEngineTerm>
+    <SearchEngineTerm>Body</SearchEngineTerm>
+    <SearchEngineTerm>General body repairs, interior</SearchEngineTerm>
+    <SearchEngineTerm>69 Passenger protection</SearchEngineTerm>
+    <SearchEngineTerm>Airbag crash sensors</SearchEngineTerm>
+    <SearchEngineTerm>Removing and installing front side airbag crash sensor</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Workshop Manual</element>
+    <element level="1">Body</element>
+    <element level="2">General body repairs, interior</element>
+    <element level="3">69 Passenger protection</element>
+    <element level="4">Airbag crash sensors</element>
+    <element level="5">Removing and installing front side airbag crash sensor</element>
+  </path>
+  <ext-id>kmi.69.11.3</ext-id>
+  <TITLE>Removing and installing front side airbag crash sensor</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>04.2024</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630220105</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>06</Sys_type_ID>
+			<Sys_type_Desc>Airbag</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>11</Doc_type_ID>
+		<Doc_type_Desc>Remove_And_reinstall</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">a590157c94b9747ede5199700cc11d20797f0350045a65e8a1b7c82515c8a30e</HASH>
+    <HASH Type="DOC">1a5331c7101e91c19d507a6ff0c08195d860f7f9e6b50d6adccb60a7404c6312</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\A69-10928.png">e3a011d76aadd7d5c8344f2e23d62a119821c54bb9011e4372f1eb1ce65ad4dd</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A69-10869.png">1d4d4ebca5f0357b5140eb43bbb46310394e69e614709c39d910f51daab3c25e</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A69-10870.png">a048596002eb02c94a66f0149ae509e1b804d59ce53eea98004747325496b1bc</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A69-10932.png">82718be52a004cb759fd5e98f1b0e778d9e84bdf6f0591e0e3a4e9b0a41653f1</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

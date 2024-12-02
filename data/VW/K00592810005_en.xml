@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>2.0l petrol engine , CYRB,CYRC,DMFA,DNEA,From November 2017</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>CYRB</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>CYRC</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DMFA</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DNEA</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Current flow diagrams</element>
+    <element level="1">Current flow diagrams</element>
+    <element level="2">2.0l petrol engine , CYRB,CYRC,DMFA,DNEA,From November 2017</element>
+  </path>
+  <TITLE>2.0l petrol engine , CYRB,CYRC,DMFA,DNEA,From November 2017</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>09.2023</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630151431</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+<InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>00</Sys_type_ID>
+			<Sys_type_Desc>Engine</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>06</Doc_type_ID>
+		<Doc_type_Desc>WiringDiagram</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">fd2427301ebc75b26c28ee01c10470365ffe17946cd1beb21b6e9000f6dc039e</HASH>
+    <HASH Type="DOC">2c29d6066e975c1a080a7826caf3386d67e6f89e98d573f0825f12cecf55ae6a</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005020923.svg">fbfbe6db7fd9253da9fe38f4c24ef9a2a2e601fe6a63bd8a56351cf7c5d434b6</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005030923.svg">48e0e07317ccec925db7bf9621a0616ab0a7ad92d61a80051475466cfa0f5082</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005040923.svg">2ee0ccafaddd9626cd1ac3cac8ec8955940763a4eaf0981352dd6e33e29cb230</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005050923.svg">2b685cc5730481dc0ee0c374855ad66f21a27378f7af155059d7d6a5532257aa</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005060923.svg">77cbf059c3993d87d22a949722d8e8cc5c8f27afffc2812becf4e3d988ae48db</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005070923.svg">e7154c0b17d4a3cd26a5a5975b42e7d2e1a4e94042b208898daf316ac4702eac</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005080923.svg">8c389859f4839ccddfb1bd71221ddb889179e6c70b162456648bd5a7a9d1a2ea</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005090923.svg">d66e2388e3634779ff4c67408d51231bdbf947f3b6724c8442f49f9a3f9b696d</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005100923.svg">5120e61a2e5e15b89520011c5ed99bd1ebecddf1cc0ebd3a670c276a35d9c1d1</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005110923.svg">8f5f2a2773895c22f43b25da76a42d5474511bce510a371c1f62dab3492bae00</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005120923.svg">4d4750865d521455640700e55927e3ab6bc0a5e8217a28ab75e8928298f534f8</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005130923.svg">b1bb38fc1bda2ec4321bd047b9717797e288028a2d45c3abf6049882ef5abf25</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005140923.svg">28f4515d2fa73e155e9eb3737e41882d7de4557213d97976d5aac919af3cf83e</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005150923.svg">3e1aa8f469ec88d88a1ba53788e8e19e8aa6dc1fe064fe4ef9d2352b24b7bbaf</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005160923.svg">b84b758951a874328386c9497d6d81cbb15f86ac2dfc4f72b680df7b8c3954cf</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005170923.svg">569b4bcf52dae81dddb956544fb5b67bc69db277bd19db1f49ec5bfcfaea3423</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005180923.svg">112302e7572c038a41caf6153a8d4571626a102a45bffa4e5593c0f08b981ad7</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005190923.svg">b09a4273b6dcb075e74e2b5bde5669e328a5c766d79c5750d92e24581aafcf9c</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005200923.svg">660650ae79f3dfabadd8504a115b00ff555759155f185fbfad33972cde6fa4bb</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005210923.svg">72fe94f6707ce714757f4aee3d794da8f8fe11ba3be3543cb2f16440909f36f4</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005220923.svg">067462b67f6bddc39860e861c29b718d5939c05fd536f7b2153ecc8a7d3b612c</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005230923.svg">22bf83e0f7553e084bd5370c22215fef55fde5a3fa5e88baba28ce67df44c25a</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005240923.svg">99043ea3844b18b4afea147fee56295a1484c0c9f6814911c9f26e4552094863</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005250923.svg">bf4ff5a38cf7655a94a5f42c4478658f75b7f6675cd4ef76de7c9b6c309db4d4</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-005260923.svg">28dffc92339973678a30f19196408ce5e4588fc3ea57c01f1d45102729276a9c</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Workshop Manual</SearchEngineTerm>
+    <SearchEngineTerm>Body</SearchEngineTerm>
+    <SearchEngineTerm>General body repairs, interior</SearchEngineTerm>
+    <SearchEngineTerm>69 Passenger protection</SearchEngineTerm>
+    <SearchEngineTerm>Side airbags</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Workshop Manual</element>
+    <element level="1">Body</element>
+    <element level="2">General body repairs, interior</element>
+    <element level="3">69 Passenger protection</element>
+    <element level="4">Side airbags</element>
+  </path>
+  <ext-id>kmi.69.8</ext-id>
+  <TITLE>Side airbags</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>04.2024</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630220105</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>06</Sys_type_ID>
+			<Sys_type_Desc>Airbag</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>11</Doc_type_ID>
+		<Doc_type_Desc>Remove_And_reinstall</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">82171a802d6a4aa325efa77e2e83b57b6c6596e4b036504deeb34e6a33aeb5b9</HASH>
+    <HASH Type="DOC">b1b4fe4f465b32fc74214a4ac2f1f2bc2c41cd9754b92147d05d14a6fe2b8126</HASH>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Airbag systems, From November 2017</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Current flow diagrams</element>
+    <element level="1">Current flow diagrams</element>
+    <element level="2">Airbag systems, From November 2017</element>
+  </path>
+  <TITLE>Airbag systems, From November 2017</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>09.2023</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630151431</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>06</Sys_type_ID>
+			<Sys_type_Desc>Airbag</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>06</Doc_type_ID>
+		<Doc_type_Desc>WiringDiagram</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">287d03b0ae0719ad5f0eea3f0a9a59dcc6ed869715e89f93b6d4f7568de12415</HASH>
+    <HASH Type="DOC">f72698c7fb1da1aee0a13911723c06844dc98b0768326f42db3b96f1a730200f</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013020923.svg">419bf397b206be40df34292d77402ef1121734bbfb37a30d132eeac73179ba07</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013030923.svg">c14a445fbbba2123851beb3dd5ce921e66eae10124d21a4a52d4c352227fcb5a</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013040923.svg">ce8091223d3e0ec4115af1c42f64d98408dd0052779ecb2c6a5218d5820fd6c1</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013050923.svg">1048608f82eb2e3c43eaee374a525b0092c76dc130ed287963134bc9ca1c5716</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013060923.svg">4c1fa9f063dab0bd1b6d8c82cd11232a3ce5e5819e2397a4c6d387c277bade11</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013070923.svg">c7fc2b3394d1ba0ecdd30109d9a15375a5321413c6955ef12d2cbbf4e3e21d50</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013080923.svg">b5549f28b4e72137e6977e53e5174096184d75327a06607b48ef0f4739dbb264</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013090923.svg">9fad287ac2e0cefaf296f04031d9afd16a63bf9817e3ad488c6867d588c610e3</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013100923.svg">d628012f32cfa92e44e00afc1a697565ebfe277732e2e9a326fae455bd6e375d</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013110923.svg">1cdb0deca67828ea2e13cd4c12bcfe29dcf707966ac17bc77799a664bc95dc81</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013120923.svg">f95653c5bd3bce5db0f058ce185a6d6c196efba4bb222498cbd9e220e76ffd5a</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013130923.svg">ec1230739400cdd87c11596da30abecf691481947b6e73959e43ed20b307b9ed</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013140923.svg">e998d9241490002ad5676d5a1abcd1fe6b156206e8debf6c0d2bf40e337ea367</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013150923.svg">a6b967a28840e6189e28d09ad5c39a9ab1d274344a5032cdbf129c7df831717c</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013160923.svg">efe29b30667d43b0ff909b2f4be490c6c13eecd3b2f43bfb3239733eff327c98</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013170923.svg">9f1fa7a6e3b1d5061fc1a24b8967ab56f5f14fe4cb41a514f7e9a70dc2116399</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013180923.svg">f0f06d3642a7ec7e2f4835fc0ec46c92eb2079e5856f3608dddf233a9805a740</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\CR7-013190923.svg">df66d6ba5ee4e04442de3575ebd6b48a73fd8e40c8d820dd366efeeef4857d1e</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

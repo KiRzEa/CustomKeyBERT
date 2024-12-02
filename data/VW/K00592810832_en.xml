@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Fitting locations</SearchEngineTerm>
+    <SearchEngineTerm>-Connector views: parts with prefix F</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Current flow diagrams</element>
+    <element level="1">Fitting locations</element>
+    <element level="2">-Connector views: parts with prefix F</element>
+  </path>
+  <TITLE>-Connector views: parts with prefix F</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>09.2023</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630151431</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+      <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>23</Sys_type_ID>
+			<Sys_type_Desc>ALL SYSTEMS</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>00</Doc_type_ID>
+		<Doc_type_Desc>Connectors</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">50c0b1d17c4f9de3d65285e80ed4781046e34306dae7d2ca4a2a4c34746f5a2d</HASH>
+    <HASH Type="DOC">e2de5bbf9e35e424ef5ddb4b3fefa458d93c3560f419c2fd55721beeb7e9f4bd</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\4H0_973_712.svg">934ca0b932cb0c7c25214a39883793487144e39d0fe291bad536a46c4e77c027</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\1J0_973_081.svg">cbf6ab79e515ebe787a1e7dadd9d2d8081e08b50f4aeca3ebe02f888dfa4b6d0</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\4F0_973_702_F.svg">432a899de3b5285a93869fc0b8050b50aa538bac4208a00cb69d8ba6eb845fbf</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\8K0_973_702.svg">a032e3444301608281ba314b7dcd3106b5340e8bf6f86c7f41cbf77d3b53a3f1</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\4B0_972_623.svg">a3cdf9f4d3ed23234aa362dbc127c4d9fc4dcd0a35bc6e9493791b2ef2666697</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\4F0_973_702.svg">a1fe976532fc14ed3c1884fb4ce00a645c3f0f8b6cc1269219cbc3b87d502d1c</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\8P0_973_722.svg">e845a8a8d4ec42c4d76667dea583925cb088ccc454080c0b90ab2ec6d0fd65db</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\4K0_973_702_B.svg">4b407d0c9cf1d8df8f40254f6ba482d7d1d3ee97a9872ed3ca47f5e18f373360</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\4F0_973_702_A.svg">7c62c6948b2b0ba1fb7995eb2ca64336275b7409791f452343f989440c687f24</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\4K0_973_702_A.svg">43a7ffe5d662e9a95b7e4e59ddbb2aaead37a88740175f627e5ab2822d6d7abc</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\1J0_973_332.svg">44ff406cdafa7fbd065ca5e1139d0f6b04220428dd1caccfa523aac03794f771</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\1T0_973_332.svg">ef120674f7ffe1ee7adbd602de27115f0ddd43f6d45a9584ed7d2f14c25bc295</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\80A_973_703_A.svg">e0e8462d7ffa94cbefa1d0a364a988432a41dc7a6b3c6875ccc416fbac044d5f</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\4F0_973_703.svg">811eb497c3e4faba3762fb75e04bc1060a4f4b45ec215339278e8c90060ef208</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\1J0_973_119.svg">70138b910e6246970167a3e6cbb5483d4a1431d335434933fc607c69071a78ce</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

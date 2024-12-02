@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Workshop Manual</SearchEngineTerm>
+    <SearchEngineTerm>Power unit</SearchEngineTerm>
+    <SearchEngineTerm>6-cylinder common rail engine (3.0 l, 4V, EA 897 Gen II, turbocharger)</SearchEngineTerm>
+    <SearchEngineTerm>21 Turbocharging/supercharging</SearchEngineTerm>
+    <SearchEngineTerm>Turbocharger</SearchEngineTerm>
+    <SearchEngineTerm>Removing and installing turbocharger</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DENA</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DEND</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Workshop Manual</element>
+    <element level="1">Power unit</element>
+    <element level="2">6-cylinder common rail engine (3.0 l, 4V, EA 897 Gen II, turbocharger)</element>
+    <element level="3">21 Turbocharging/supercharging</element>
+    <element level="4">Turbocharger</element>
+    <element level="5">Removing and installing turbocharger</element>
+  </path>
+  <ext-id>eng.21.1.2</ext-id>
+  <TITLE>Removing and installing turbocharger</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>11.2022</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630220105</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>00</Sys_type_ID>
+			<Sys_type_Desc>Engine</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>11</Doc_type_ID>
+		<Doc_type_Desc>Remove_And_reinstall</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">c601ab88deafc3d0d5306c70fb9bfb7e0a3116d5fbafdb41dde5a7886bf6dfcb</HASH>
+    <HASH Type="DOC">f88ae93ec024f80cffef61674a1c9738f1473ea995f389e5516e527b1dc4013f</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\W00-11130.png">9e43de3fb79f4293a72d3f88494c8825d73a05d8974be8e5184cacca6e2c5a4d</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\W00-11228.png">b4c6da0dabf637e2594ce04fa393395fc892ba919fb9ab740620831536385859</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N19-11509.png">46be50b442b7d798bd2216817f4ab39700690d2d016b99485c92e3a5f745327b</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A21-10997.png">6793b7f3b9a16b439b9c43b7666985cd440bef32b408e5a49b6af35607e40ed9</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A26-11896.png">a76594bbcbaca5ce05f5c4277698f8c2f517faedabd3779a4c8be4623b29412b</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A21-11002.png">16221de2ae86bbe4923df189a609015dd7a5d9a2696c9f2a994edd002b421889</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A28-10187.png">636e63e61952e0cd087d31f18b19081b5d11a03ac0ca6510b14fd11a589cf6d9</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A21-11003.png">05da310fa772d1333e4520632b3b846ee02fd5f42f2afff743419d33399196d1</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A21-11225.png">d5c9fb70324435bad7f630e4d9bdd3cef8c3629c625416eb4e84112bf032f1d6</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N21-11030.png">500130d7be05440265c89a3bd0f7f3fc22a850052a0bf315e2920ee206fbd171</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Workshop Manual</SearchEngineTerm>
+    <SearchEngineTerm>Running gear</SearchEngineTerm>
+    <SearchEngineTerm>Brake system</SearchEngineTerm>
+    <SearchEngineTerm>47 Brakes - hydraulics</SearchEngineTerm>
+    <SearchEngineTerm>Front brake caliper</SearchEngineTerm>
+    <SearchEngineTerm>Removing and installing brake caliper piston</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Workshop Manual</element>
+    <element level="1">Running gear</element>
+    <element level="2">Brake system</element>
+    <element level="3">47 Brakes - hydraulics</element>
+    <element level="4">Front brake caliper</element>
+    <element level="5">Removing and installing brake caliper piston</element>
+  </path>
+  <ext-id>bra.47.1.2</ext-id>
+  <TITLE>Removing and installing brake caliper piston</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>04.2024</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630220105</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>01</Sys_type_ID>
+			<Sys_type_Desc>Brakes</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>11</Doc_type_ID>
+		<Doc_type_Desc>Remove_And_reinstall</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">6d240161cacbba9185ae42bb1baa0ab0f3d99483012746aa6ba2a51172ae249a</HASH>
+    <HASH Type="DOC">d4e121ce31cc35669e8b2f2bda07efb575f418b2ed6dfcd66c65e18215c65944</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\W00-11606.png">6f69f986b0e3ce5e71da951a9033986540fab73786d8e821b41ad2e858cbc946</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\W00-11992.png">fbeaf9a6ff3868006e1b5821d366c623a0b3b98bfd44882a2751f14c3b6d8c8c</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\W00-11289.png">4ae63c842a9077fcfe4a4d67e8b81ce9ed305e7989e36dd20895e58851cc3a19</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N47-10422.png">c43abd60707c75d1589e91b4a897c628214b89221fa0c376c0e101458519f5b3</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N47-10423.png">8e118cb07c128684199622ed3e176998fb4c2f3311159300d66b8c072d0bc3e6</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N47-10424.png">de725dda5968da10802606304a1d039228845cf186ea4a0955190a653a3f5315</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N47-10425.png">1dd19c38483adf4ae26917455cf1452cb91336372a3de5c16279cb13abbe2e7e</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

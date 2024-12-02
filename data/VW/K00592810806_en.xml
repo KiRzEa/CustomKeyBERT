@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Current flow diagrams</SearchEngineTerm>
+    <SearchEngineTerm>Fitting locations</SearchEngineTerm>
+    <SearchEngineTerm>- Fitting locations: rear part of vehicle</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Current flow diagrams</element>
+    <element level="1">Fitting locations</element>
+    <element level="2">- Fitting locations: rear part of vehicle</element>
+  </path>
+  <TITLE>- Fitting locations: rear part of vehicle</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>01.2024</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630151431</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+   <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>23</Sys_type_ID>
+			<Sys_type_Desc>ALL SYSTEMS</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>04</Doc_type_ID>
+		<Doc_type_Desc>Installation_position_in_picture</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">d57c8026ea93ab0cbc95ab9c168808365e6e8d670a2a3f8907aaa9a88fd06c6a</HASH>
+    <HASH Type="DOC">0deb860363432c182a8914a7f0acd31adb51c18970d394fdfc56fa69d00a487d</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-16291.png">95126ec81ae32cee7c048567b243d882369fb41cd5990f006fee476a7b4b9fe1</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-16438.png">2a970824009ed8562b83b7134a49088ab12151bfbcab842393726c913bd33d81</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15182.png">b140657fdbbc751e654ab1de3f1779a2d5344f6582d552fa0b87f5c9affc9703</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-14527.png">11fa6fdfa57e68662090ee55d9199092afea96b46a74581d4110833c26e4194d</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15238.png">b4a21411e2d4d111d88d46b5cc49355e2080c459f1012ca94f87d33d1b9562b2</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15239.png">a2980a67eca3274fd00dfe2c98f6e23a43684d6a20cd9b255cc68f5f970f2321</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15056.png">13874a78875634ca03f31b1236a56a3e7b97f5031891283ce70fd4976691dc2d</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\N97-15499.png">86c65b31eaa9f65bfab0a914d487355786cd421df6adf10bd99ebc0230408a86</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <SearchEngineTerms>
+    <SearchEngineTerm>Workshop Manual</SearchEngineTerm>
+    <SearchEngineTerm>Power unit</SearchEngineTerm>
+    <SearchEngineTerm>6-cylinder common rail engine (3.0 l, 4V, EA 897 Gen II, turbocharger)</SearchEngineTerm>
+    <SearchEngineTerm>15 Cylinder head, valve gear</SearchEngineTerm>
+    <SearchEngineTerm>Cylinder head</SearchEngineTerm>
+    <SearchEngineTerm>Removing and installing cylinder head</SearchEngineTerm>
+    <SearchEngineTerm>Removing cylinder head, bank 1 (right side)</SearchEngineTerm>
+  </SearchEngineTerms>
+  <VehSpecs>
+    <VehSpec>
+      <FASMake>VWW</FASMake>
+      <Make>VW</Make>
+      <InternalModelName>CR7</InternalModelName>
+      <AddVehSpec level="0">
+        <key isTranslated="FALSE">Model</key>
+        <value>CR7 - Touareg</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DENA</value>
+      </AddVehSpec>
+      <AddVehSpec level="1">
+        <key isTranslated="FALSE">Engine</key>
+        <value>DEND</value>
+      </AddVehSpec>
+    </VehSpec>
+  </VehSpecs>
+  <path>
+    <element level="0">Workshop Manual</element>
+    <element level="1">Power unit</element>
+    <element level="2">6-cylinder common rail engine (3.0 l, 4V, EA 897 Gen II, turbocharger)</element>
+    <element level="3">15 Cylinder head, valve gear</element>
+    <element level="4">Cylinder head</element>
+    <element level="5">Removing and installing cylinder head</element>
+    <element level="6">Removing cylinder head, bank 1 (right side)</element>
+  </path>
+  <TITLE>Removing cylinder head, bank 1 (right side)</TITLE>
+  <LANGUAGE>en</LANGUAGE>
+  <OE_SCHEMA_VERSION>2</OE_SCHEMA_VERSION>
+  <COCOLI_ENTRY>VWW_RMI_EU5_1</COCOLI_ENTRY>
+  <OE_VERSION>11.2022</OE_VERSION>
+  <OE_LAST_MODIFICATION_DATE>20240630220105</OE_LAST_MODIFICATION_DATE>
+  <RB_TOOL_VERSION>1.5.0.0</RB_TOOL_VERSION>
+  <label />
+  <InfoNet>
+	<System_types>
+		<System_type>
+			<Sys_type_ID>00</Sys_type_ID>
+			<Sys_type_Desc>Engine</Sys_type_Desc>
+		</System_type>
+	</System_types>
+	<Document_type>
+		<Doc_type_ID>11</Doc_type_ID>
+		<Doc_type_Desc>Remove_And_reinstall</Doc_type_Desc>
+	</Document_type>
+ </InfoNet>
+  <SAVEPATH>
+    <element level="0">VW</element>
+    <element level="1">en</element>
+  </SAVEPATH>
+  <DocumentType />
+  <HASHES>
+    <HASH Type="PATH">8d6633e0d7d99d9f22aa3059b0611db468a60759fb6ed9d96f40c864fe6dfa33</HASH>
+    <HASH Type="DOC">a2bd9069da0c06efcbe0fff485e5452064c45c3c91b6d5a5e684484a18ca9c6d</HASH>
+    <HASHES_IMG>
+      <HASH Type="ASSET" SOURCEFILE="VW\W00-11227.png">14da6ab96b82bb9ad28cb9a7632b66a029075bd48f40a23c1b08421f42e0fbdb</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A15-11769.png">9ce5c08b13324b17966f8ca80d0d09b50d7dd5153131c934278c701cd3f10ac1</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A15-11746.png">70d47f232f21b0202340c048b8488a516ea97083ab95819c7770b974b5afab7d</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A15-12096.png">7056eb884d6f2aa443139eb2c4f967e09f9aaca73c72e22b6fca5a2b84bdeb1a</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A15-11764.png">665af9eabd849572e150112c4965d9fbdaf5706c1ad4110dd63431c86a2a2feb</HASH>
+      <HASH Type="ASSET" SOURCEFILE="VW\A15-11745.png">39130dc453bbf4a94df0aaf9dc1107a2ff916756d9b6dbdce32c328139ea2b01</HASH>
+    </HASHES_IMG>
+  </HASHES>
+  <HASH Type="METADOC">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</HASH>
+</root>
