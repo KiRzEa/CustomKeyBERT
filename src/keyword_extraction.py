@@ -54,9 +54,9 @@ class KeywordExtractor:
         else:
             self.embed_model = embed_model
         if llm:
-            if isinstance(self.llm, AzureOpenAI):
+            if isinstance(llm, AzureOpenAI):
                 self.llm = OpenAI(client=llm, model='gpt-4o', chat=True)
-            elif isinstance(self.llm, OpenAI):
+            elif isinstance(llm, OpenAI):
                 self.llm = llm
             self.model = KeyLLM(llm=self.llm)
         else:
