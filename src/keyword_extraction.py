@@ -142,8 +142,8 @@ class KeywordExtractor:
                 )
                 filtered_keywords = [Keyword(keyword=keyword, score=score, file=file.name, file_path=str(file)) for keyword, score in doc_keywords if score > 0.6]
 
-                for keyword in filtered_keywords:
-                    keyword.embeddings = self.embed(keyword.keyword)
+            for keyword in filtered_keywords:
+                keyword.embeddings = self.embed(keyword.keyword)
             self.total_keywords.extend(filtered_keywords)
 
 
