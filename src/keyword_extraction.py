@@ -36,8 +36,8 @@ class Keyword(BaseModel):
     component: Optional[str] = None
 
 class Component(BaseModel):
-    id: Any
-    description: str
+    component_id: Any
+    component: str
     keyword: str
     file: str
     score: float
@@ -164,8 +164,8 @@ class KeywordExtractor:
                 )
 
             scores.append(Component(
-                id=component.id,
-                description=component.description,
+                component_id=component.id,
+                component=component.description,
                 keyword=keyword.keyword,
                 file=keyword.file,
                 score=score
