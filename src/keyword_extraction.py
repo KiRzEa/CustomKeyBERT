@@ -48,7 +48,7 @@ class InputComponent(BaseModel):
     embeddings: Any
 
 class KeywordExtractor:
-    def __init__(self, embed_model, llm=None, judge_model):
+    def __init__(self, embed_model, judge_model, llm=None):
         self.judge_model = judge_model
         if isinstance(embed_model, str):
             self.embed_model = SentenceTransformer(embed_model)
