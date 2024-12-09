@@ -42,7 +42,7 @@ class OpenAIBackend(BaseEmbedder):
         if isinstance(documents, str):
             documents = [documents]
         embeddings = []
-        for document in tqdm(documents):
+        for document in documents:
             embedding = self.embedding_model.embeddings.create(
                 input=[document],
                 model='text-embedding-3-large'
