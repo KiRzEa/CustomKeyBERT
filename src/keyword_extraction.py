@@ -153,20 +153,19 @@ class KeywordExtractor:
         for file in tqdm(self.files, desc='[INFO] Extracting keywords...'):
             textual_content = self.get_text(file)
             if isinstance(self.model, KeyLLM):
-                docs = self.model.extract_keywords(
+                doc_keywords = self.model.extract_keywords(
                     textual_content,
                 )
-                print(docs)
-                filtered_keywords = [Keyword(keyword=keyword, score=1.0, file=file.name, file_path=str(file)) for doc_keywords in docs for keyword in doc_keywords]
+                filtered_keywords = [Keyword(keyword=keyword, score=1.0, file=file.name, file_path=str(file)) for keyword in doc_keywords]
                 # for keyword in filtered_keywords:
                 #     keyword.embeddings = self.embed(keyword.keyword)
             elif isinstance(self.model, KeyBERT):
-                doc_keywords = self.model.extract_keywords(
+                doc_results = self.model.extract_keywords(
                     list(segment("en", textual_content)),
                     top_n=100,
                     keyphrase_ngram_range=(1, 3),
                 )
-                filtered_keywords = [Keyword(keyword=keyword, score=score, file=file.name, file_path=str(file)) for keyword, score in doc_keywords if score > 0.6]
+                filtered_keywords = [Keyword(keyword=keyword, score=score, file=file.name, file_path=str(file)) for doc_keywords in doc_results for keyword, score in doc_keywords if score > 0.6]
 
             for keyword in filtered_keywords:
                 keyword.embeddings = self.embed(keyword.keyword)
