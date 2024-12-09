@@ -185,7 +185,7 @@ class OpenAI(BaseLLM):
                     {"role": "system", "content": self.system_prompt},
                     {"role": "user", "content": prompt}
                 ]
-                kwargs = {"model": self.model, "messages": messages, **self.generator_kwargs}
+                kwargs = {"model": self.model, "messages": messages, "temperature": 0, **self.generator_kwargs}
                 if self.exponential_backoff:
                     response = chat_completions_with_backoff(self.client, **kwargs)
                 else:
