@@ -204,7 +204,7 @@ class KeywordExtractor:
                 files.append(score.file)
         return results[:top_k]
 
-    def predict(self, components)
+    def predict(self, components):
         final_results = []
         for idx, comp in tqdm(components.iterrows()):
             input_comp = InputComponent(
