@@ -156,6 +156,7 @@ class KeywordExtractor:
                 docs = self.model.extract_keywords(
                     textual_content,
                 )
+                print(docs)
                 filtered_keywords = [Keyword(keyword=keyword, score=1.0, file=file.name, file_path=str(file)) for doc_keywords in docs for keyword in doc_keywords]
                 # for keyword in filtered_keywords:
                 #     keyword.embeddings = self.embed(keyword.keyword)
