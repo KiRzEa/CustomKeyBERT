@@ -48,7 +48,8 @@ class InputComponent(BaseModel):
     embeddings: Any
 
 class KeywordExtractor:
-    def __init__(self, embed_model, llm=None):
+    def __init__(self, embed_model, llm=None, judge_model):
+        self.judge_model = judge_model
         if isinstance(embed_model, str):
             self.embed_model = SentenceTransformer(embed_model)
         else:
@@ -60,7 +61,10 @@ class KeywordExtractor:
                 self.llm = llm
             self.model = KeyLLM(llm=self.llm)
         else:
-            self.model = KeyBERT(model=self.embed_model)
+            if self.embed_model:
+                self.model = KeyBERT(model=self.embed_model)
+            else:
+                self.model = None
         
         self.files = self.get_html_files()
 
@@ -115,7 +119,7 @@ class KeywordExtractor:
         return ' '.join(textual_content)
 
     def embed(self, text):
-        embedding =  self.embed_model.encode(text).reshape(1, -1)
+        embedding =  self.judge_model.embed(text)
         return embedding
     
     def get_components(self, path):

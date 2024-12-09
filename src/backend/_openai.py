@@ -29,7 +29,7 @@ class OpenAIBackend(BaseEmbedder):
                 "Error while connecting to OpenAI client."
             )
 
-    def embed(self, documents: List[str], verbose: bool = False) -> np.ndarray:
+    def embed(self, documents: List[str] | str, verbose: bool = False) -> np.ndarray:
         """Embed a list of n documents/words into an n-dimensional
         matrix of embeddings
         Arguments:
@@ -39,6 +39,8 @@ class OpenAIBackend(BaseEmbedder):
             Document/words embeddings with shape (n, m) with `n` documents/words
             that each have an embeddings size of `m`
         """
+        if isinstance(documents, str):
+            documents = [documents]
         embeddings = []
         for document in tqdm(documents):
             embedding = self.embedding_model.embeddings.create(
