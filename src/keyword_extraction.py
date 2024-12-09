@@ -166,7 +166,7 @@ class KeywordExtractor:
                     keyphrase_ngram_range=(1, 3),
                 )
                 print(doc_results)
-                if isinstance(doc_results[0], list):
+                if not isinstance(doc_results[0], list):
                     doc_results = [doc_results]
                 filtered_keywords = [Keyword(keyword=keyword, score=score, file=file.name, file_path=str(file)) for doc_keywords in doc_results for keyword, score in doc_keywords if score > 0.6]
 
