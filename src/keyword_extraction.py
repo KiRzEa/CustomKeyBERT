@@ -11,6 +11,7 @@ import pandas as pd
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+from sentencex import segment
 from tqdm import tqdm
 
 # OpenAI-specific imports
@@ -46,6 +47,26 @@ class InputComponent(BaseModel):
     id: Any
     description: str
     embeddings: Any
+
+sorted_files = ['K00.5928.11_X-4HYXBX2540B_en.html',
+'K00.5928.11_X-K6D34843_en.html',
+'K00.5928.16_X-1X0V7W55OBG_en.html',
+'K00.5928.16_x-3id07ma_en.html',
+'K00.5928.19_X-HST6GXOU3X_en.html',
+'K00.5928.19_X-R5WY9VJC2R_en.html',
+'K00592810003_en.html',
+'K00592810005_en.html',
+'K00592810007_en.html',
+'K00592810013_en.html',
+'K00592810014_en.html',
+'K00592810018_en.html',
+'K00592810022_en.html',
+'K00592810804_en.html',
+'K00592810805_en.html',
+'K00592810806_en.html',
+'K00592810831_en.html',
+'K00592810832_en.html',
+'K00592810833_en.html']
 
 class KeywordExtractor:
     def __init__(self, embed_model, judge_model, llm=None):
@@ -132,10 +153,10 @@ class KeywordExtractor:
         for file in tqdm(self.files, desc='[INFO] Extracting keywords...'):
             textual_content = self.get_text(file)
             if isinstance(self.model, KeyLLM):
-                doc_keywords = self.model.extract_keywords(
+                docs = self.model.extract_keywords(
                     textual_content,
                 )
-                filtered_keywords = [Keyword(keyword=keyword, score=1.0, file=file.name, file_path=str(file)) for keyword in doc_keywords[0]]
+                filtered_keywords = [Keyword(keyword=keyword, score=1.0, file=file.name, file_path=str(file)) for doc_keywords in docs for keyword in doc_keywords]
                 # for keyword in filtered_keywords:
                 #     keyword.embeddings = self.embed(keyword.keyword)
             elif isinstance(self.model, KeyBERT):
@@ -182,6 +203,36 @@ class KeywordExtractor:
                 results.append(score)
                 files.append(score.file)
         return results[:top_k]
+
+    def predict(self, components)
+        final_results = []
+        for idx, comp in tqdm(components.iterrows()):
+            input_comp = InputComponent(
+                id=comp['ID'],
+                description=comp['Description (ENG)'],
+                embeddings=self.embed(comp['Description (ENG)'])
+            )
+            result = self.get_related_files(input_comp, threshold=0.5)
+            final_results.extend(result)
+
+        file_results = {}
+        for file in tqdm(sorted_files):
+            file_keywords = {}
+            file_components = {}
+            for result in final_results:
+                if result.file == file:
+                    if not file_keywords.get(result.keyword, None):
+                        file_keywords[result.keyword] = [result.model_dump()]
+                    else:
+                        file_keywords[result.keyword].append(result.model_dump())
+                    if not file_components.get(result.component, None):
+                        file_components[result.component] = [result.model_dump()]
+                    else:
+                        file_components[result.component].append(result.model_dump())
+                        print("There multiple keywords for a component")
+
+            file_results[file] = {'keywords': file_keywords, 'components': file_components}   
+        return file_results
     
     def generate_component_xml(self, components, file_name):
         """
