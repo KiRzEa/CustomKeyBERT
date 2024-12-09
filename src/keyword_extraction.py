@@ -127,7 +127,7 @@ class KeywordExtractor:
         return self.components
 
     def get_doc_keywords(self):
-        self.total_keywords = []
+        self.doc_keywords = []
 
         for file in tqdm(self.files, desc='[INFO] Extracting keywords...'):
             textual_content = self.get_text(file)
@@ -148,10 +148,10 @@ class KeywordExtractor:
 
             for keyword in filtered_keywords:
                 keyword.embeddings = self.embed(keyword.keyword)
-            self.total_keywords.extend(filtered_keywords)
+            self.doc_keywords.extend(filtered_keywords)
 
 
-        return self.total_keywords
+        return self.doc_keywords
 
     def get_related_files(self, component: InputComponent, top_k: int = 10, threshold: float = 0.6):
         scores = []
