@@ -161,7 +161,7 @@ class KeywordExtractor:
                 #     keyword.embeddings = self.embed(keyword.keyword)
             elif isinstance(self.model, KeyBERT):
                 doc_keywords = self.model.extract_keywords(
-                    textual_content,
+                    list(segment("en", textual_content)),
                     top_n=100,
                     keyphrase_ngram_range=(1, 3),
                 )
