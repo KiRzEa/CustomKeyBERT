@@ -13,6 +13,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 from sentencex import segment
 from tqdm import tqdm
+from src.prompts import EVALUATION_PROMPT
 
 # OpenAI-specific imports
 from openai import AzureOpenAI
@@ -27,6 +28,13 @@ load_dotenv()
 
 MODEL_DIR = os.getenv("MODEL_DIR")
 DATA_DIR  = os.getenv("DATA_DIR")
+
+gpt_client = AzureOpenAI(
+    api_key='8f257f6f430842f29012b3bccf8cf5f9',
+    azure_endpoint='https://bosch-cr-openai.openai.azure.com/',
+    azure_deployment='gpt-4o',
+    api_version='2024-02-15-preview'
+)
 
 class Keyword(BaseModel):
     keyword: str
@@ -47,6 +55,11 @@ class InputComponent(BaseModel):
     id: Any
     description: str
     embeddings: Any
+
+def get_components_by_file(results, file):
+    components = list(results[file.name]['components'].keys())
+    keywords = list(results[file.name]['keywords'].keys())
+    return components, keywords
 
 sorted_files = ['K00.5928.11_X-4HYXBX2540B_en.html',
 'K00.5928.11_X-K6D34843_en.html',
@@ -69,7 +82,7 @@ sorted_files = ['K00.5928.11_X-4HYXBX2540B_en.html',
 'K00592810833_en.html']
 
 class KeywordExtractor:
-    def __init__(self, embed_model, judge_model, llm=None):
+    def __init__(self, embed_model=None, judge_model=None, llm=None):
         self.judge_model = judge_model
         if isinstance(embed_model, str):
             self.embed_model = SentenceTransformer(embed_model)
@@ -153,22 +166,19 @@ class KeywordExtractor:
         for file in tqdm(self.files, desc='[INFO] Extracting keywords...'):
             textual_content = self.get_text(file)
             if isinstance(self.model, KeyLLM):
-                doc_keywords = self.model.extract_keywords(
+                docs = self.model.extract_keywords(
                     textual_content,
                 )
-                filtered_keywords = [Keyword(keyword=keyword, score=1.0, file=file.name, file_path=str(file)) for keyword in doc_keywords[0]]
+                filtered_keywords = [Keyword(keyword=keyword, score=1.0, file=file.name, file_path=str(file)) for doc_keywords in docs for keyword in doc_keywords]
                 # for keyword in filtered_keywords:
                 #     keyword.embeddings = self.embed(keyword.keyword)
             elif isinstance(self.model, KeyBERT):
-                doc_results = self.model.extract_keywords(
+                doc_keywords = self.model.extract_keywords(
                     list(segment("en", textual_content)),
                     top_n=100,
                     keyphrase_ngram_range=(1, 3),
                 )
-                print(doc_results)
-                if not isinstance(doc_results[0], list):
-                    doc_results = [doc_results]
-                filtered_keywords = [Keyword(keyword=keyword, score=score, file=file.name, file_path=str(file)) for doc_keywords in doc_results for keyword, score in doc_keywords if score > 0.6]
+                filtered_keywords = [Keyword(keyword=keyword, score=score, file=file.name, file_path=str(file)) for keyword, score in doc_keywords if score > 0.6]
 
             for keyword in filtered_keywords:
                 keyword.embeddings = self.embed(keyword.keyword)
@@ -182,13 +192,13 @@ class KeywordExtractor:
         for keyword in self.doc_keywords:
             try:
                 score = cosine_similarity(
-                    component.embeddings,
-                    keyword.embeddings
+                    component.embeddings.reshape(1, -1),
+                    keyword.embeddings.reshape(1, -1)
                 )
             except:
                 score = cosine_similarity(
-                    component.embeddings,
-                    self.embed(keyword.keyword)
+                    self.embed(component.description).reshape(1, -1),
+                    self.embed(keyword.keyword).reshape(1, -1)
                 )
 
             scores.append(Component(
@@ -200,22 +210,23 @@ class KeywordExtractor:
             ))
         scores = sorted(scores, key=lambda x: x.score, reverse=True)
         results = []
-        files = []
+        # files = []
         for score in scores:
-            if score.file not in files and score.score > threshold:
+            # if score.file not in files and score.score > threshold:
+            if score.score > threshold:
                 results.append(score)
-                files.append(score.file)
+                # files.append(score.file)
         return results[:top_k]
 
-    def predict(self, components):
+    def predict(self, components, threshold=0.5):
         final_results = []
         for idx, comp in tqdm(components.iterrows()):
             input_comp = InputComponent(
                 id=comp['ID'],
                 description=comp['Description (ENG)'],
-                embeddings=self.embed(comp['Description (ENG)'])
+                embeddings=comp['embeddings']
             )
-            result = self.get_related_files(input_comp, threshold=0.5)
+            result = self.get_related_files(input_comp, threshold=threshold)
             final_results.extend(result)
 
         file_results = {}
@@ -232,11 +243,28 @@ class KeywordExtractor:
                         file_components[result.component] = [result.model_dump()]
                     else:
                         file_components[result.component].append(result.model_dump())
-                        print("There multiple keywords for a component")
 
             file_results[file] = {'keywords': file_keywords, 'components': file_components}   
         return file_results
-    
+    def evaluate(self, results):
+        responses = {file.name: [] for file in self.files}
+
+        for file in tqdm(self.files):
+            document=self.get_text(file)
+            for extracted_component in get_components_by_file(results, file)[0]:
+                prompt_call = EVALUATION_PROMPT.format(document=document, component=extracted_component,
+                                                    filename=str(file))
+                messages = [{
+                    'role': 'user', 'content': prompt_call
+                }]
+                response = gpt_client.chat.completions.create(
+                    model='gpt-4o',
+                    messages=messages,
+                    temperature=0.0
+                )
+                responses[file.name].append(response.choices[0].message.content)
+        
+        return responses
     def generate_component_xml(self, components, file_name):
         """
         Generates an XML file with component data.
