@@ -1,223 +1,53 @@
-import time
-import openai
+import numpy as np
 from tqdm import tqdm
-from typing import Mapping, Any, List
-from src.llm._base import BaseLLM
-from src.llm._utils import retry_with_exponential_backoff, process_candidate_keywords
+from typing import Union, List
+
+from openai import AzureOpenAI
+
+from src.backend import BaseEmbedder
 
 
-DEFAULT_PROMPT = """
-The following is a list of documents. Please extract the top keywords, separated by a comma, that describe the car components or related topics mentioned in the texts.
-
-Document:
-- The car's braking system is showing signs of wear, particularly the brake pads and rotors, which have developed noticeable grooves. Additionally, the brake fluid seems to be leaking slightly.
-
-Keywords: Braking system, Brake pads, Rotors, Grooves, Brake fluid, Wear, Leaking
-
-Document:
-- The engine has been overheating recently, and a mechanic diagnosed a malfunctioning radiator and a broken thermostat as the primary issues.
-
-Keywords: Engine, Overheating, Radiator, Thermostat, Malfunctioning, Cooling system, Mechanic
-
-Document:
-- [DOCUMENT]
-
-Keywords:
-"""
-
-DEFAULT_CHAT_PROMPT = """
-I have the following document:
-[DOCUMENT]
-
-Based on the information above, extract the keywords that best describe the car components or related topics mentioned in the text.
-Use the following format separated by commas:
-<keywords>
-"""
-
-
-class OpenAI(BaseLLM):
-    """ Using the OpenAI API to extract keywords
-
-    The default method is `openai.Completion` if `chat=False`.
-    The prompts will also need to follow a completion task. If you
-    are looking for a more interactive chats, use `chat=True`
-    with `model=gpt-3.5-turbo`.
-
-    For an overview see:
-    https://platform.openai.com/docs/models
-
-    NOTE: The resulting keywords are expected to be separated by commas so
-    any changes to the prompt will have to make sure that the resulting
-    keywords are comma-separated.
+class OpenAIBackend(BaseEmbedder):
+    """Flair Embedding Model
+    The Flair embedding model used for generating document and
+    word embeddings.
 
     Arguments:
-        client: A `openai.OpenAI` client
-        model: Model to use within OpenAI, defaults to `"text-ada-001"`.
-               NOTE: If a `gpt-3.5-turbo` model is used, make sure to set
-               `chat` to True.
-        generator_kwargs: Kwargs passed to `openai.Completion.create`
-                          for fine-tuning the output.
-        prompt: The prompt to be used in the model. If no prompt is given,
-                `self.default_prompt_` is used instead.
-                NOTE: Use `"[DOCUMENT]"` in the prompt
-                to decide where the document needs to be inserted
-        system_prompt: The message that sets the behavior of the assistant. 
-                       It's typically used to provide high-level instructions 
-                       for the conversation.
-        delay_in_seconds: The delay in seconds between consecutive prompts
-                          in order to prevent RateLimitErrors.
-        exponential_backoff: Retry requests with a random exponential backoff.
-                             A short sleep is used when a rate limit error is hit,
-                             then the requests is retried. Increase the sleep length
-                             if errors are hit until 10 unsuccesfull requests.
-                             If True, overrides `delay_in_seconds`.
-        chat: Set this to True if a chat model is used. Generally, this GPT 3.5 or higher
-              See: https://platform.openai.com/docs/models/gpt-3-5
-        verbose: Set this to True if you want to see a progress bar for the
-                 keyword extraction.
+        embedding_model: A OpenAI embedding model
 
-    Usage:
-
-    To use this, you will need to install the openai package first:
-
-    `pip install openai`
-
-    Then, get yourself an API key and use OpenAI's API as follows:
-
-    ```python
-    import openai
-    from src.llm import OpenAI
-    from src import KeyLLM
-
-    # Create your LLM
-    client = openai.OpenAI(api_key=MY_API_KEY)
-    llm = OpenAI(client)
-
-    # Load it in KeyLLM
-    kw_model = KeyLLM(llm)
-
-    # Extract keywords
-    document = "The website mentions that it only takes a couple of days to deliver but I still have not received mine."
-    keywords = kw_model.extract_keywords(document)
-    ```
-
-    You can also use a custom prompt:
-
-    ```python
-    prompt = "I have the following document: [DOCUMENT] \nThis document contains the following keywords separated by commas: '"
-    llm = OpenAI(client, prompt=prompt, delay_in_seconds=5)
-    ```
-
-    If you want to use OpenAI's ChatGPT model:
-
-    ```python
-    llm = OpenAI(client, model="gpt-3.5-turbo", delay_in_seconds=10, chat=True)
-    ```
     """
-    def __init__(self,
-                 client,
-                 model: str = "gpt-3.5-turbo-instruct",
-                 prompt: str = None,
-                 system_prompt: str = "You are a helpful assistant.",
-                 generator_kwargs: Mapping[str, Any] = {},
-                 delay_in_seconds: float = None,
-                 exponential_backoff: bool = False,
-                 chat: bool = False,
-                 verbose: bool = False
-                 ):
-        self.client = client
-        self.model = model
 
-        if prompt is None:
-            self.prompt = DEFAULT_CHAT_PROMPT if chat else DEFAULT_PROMPT
+    def __init__(self, embedding_model: AzureOpenAI):
+        super().__init__()
+
+        # Flair word embeddings
+        if isinstance(embedding_model, AzureOpenAI):
+            self.embedding_model = embedding_model
+
         else:
-            self.prompt = prompt
+            raise ValueError(
+                "Error while connecting to OpenAI client."
+            )
 
-        self.system_prompt = system_prompt
-        self.default_prompt_ = DEFAULT_CHAT_PROMPT if chat else DEFAULT_PROMPT
-        self.delay_in_seconds = delay_in_seconds
-        self.exponential_backoff = exponential_backoff
-        self.chat = chat
-        self.verbose = verbose
-
-        self.generator_kwargs = generator_kwargs
-        if self.generator_kwargs.get("model"):
-            self.model = generator_kwargs.get("model")
-        if self.generator_kwargs.get("prompt"):
-            del self.generator_kwargs["prompt"]
-        if not self.generator_kwargs.get("stop") and not chat:
-            self.generator_kwargs["stop"] = "\n"
-
-    def extract_keywords(self, documents: List[str], candidate_keywords: List[List[str]] = None):
-        """ Extract topics
-
+    def embed(self, documents: List[str] | str, verbose: bool = False) -> np.ndarray:
+        """Embed a list of n documents/words into an n-dimensional
+        matrix of embeddings
         Arguments:
-            documents: The documents to extract keywords from
-            candidate_keywords: A list of candidate keywords that the LLM will fine-tune
-                        For example, it will create a nicer representation of
-                        the candidate keywords, remove redundant keywords, or
-                        shorten them depending on the input prompt.
-
+            documents: A list of documents or words to be embedded
+            verbose: Controls the verbosity of the process
         Returns:
-            all_keywords: All keywords for each document
+            Document/words embeddings with shape (n, m) with `n` documents/words
+            that each have an embeddings size of `m`
         """
-        all_keywords = []
-        candidate_keywords = process_candidate_keywords(documents, candidate_keywords)
-
-        for document, candidates in tqdm(zip(documents, candidate_keywords), disable=not self.verbose):
-            prompt = self.prompt.replace("[DOCUMENT]", document)
-            if candidates is not None:
-                prompt = prompt.replace("[CANDIDATES]", ", ".join(candidates))
-
-            # Delay
-            if self.delay_in_seconds:
-                time.sleep(self.delay_in_seconds)
-            # self.client.chat.completions.create(
-            #     model=self.model,
-            #     messages=[
-            #         {"role": "system", "content": self.system_prompt},
-            #         {"role": "user", "content": prompt}
-            #     ]
-            # )
-            # Use a chat model
-            if self.chat:
-                messages = [
-                    {"role": "system", "content": self.system_prompt},
-                    {"role": "user", "content": prompt}
-                ]
-                kwargs = {"model": self.model, "messages": messages, "temperature": 0.0, **self.generator_kwargs}
-                if self.exponential_backoff:
-                    response = chat_completions_with_backoff(self.client, **kwargs)
-                else:
-                    response = self.client.chat.completions.create(**kwargs)
-                keywords = response.choices[0].message.content.strip()
-
-            # Use a non-chat model
-            else:
-                if self.exponential_backoff:
-                    response = completions_with_backoff(self.client, model=self.model, prompt=prompt, **self.generator_kwargs)
-                else:
-                    response = self.client.completions.create(model=self.model, prompt=prompt, **self.generator_kwargs)
-                keywords = response.choices[0].text.strip()
-            keywords = [keyword.strip() for keyword in keywords.split(",")]
-            all_keywords.append(keywords)
-
-        return all_keywords
-
-
-def completions_with_backoff(client, **kwargs):
-    return retry_with_exponential_backoff(
-        client.completions.create,
-        errors=(
-            openai.RateLimitError,
-        ),
-    )(**kwargs)
-
-
-def chat_completions_with_backoff(client, **kwargs):
-    return retry_with_exponential_backoff(
-        client.chat.completions.create,
-        errors=(
-            openai.RateLimitError,
-        ),
-    )(**kwargs)
+        if isinstance(documents, str):
+            documents = [documents]
+        embeddings = []
+        for document in documents:
+            embedding = self.embedding_model.embeddings.create(
+                input=[document],
+                model='text-embedding-3-large'
+            ).data[0].embedding
+            embedding = np.array(embedding)
+            embeddings.append(embedding)
+        embeddings = np.asarray(embeddings)
+        return embeddings
